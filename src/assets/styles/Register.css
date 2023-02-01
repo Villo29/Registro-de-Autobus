@@ -1,0 +1,19 @@
+.cuadro{
+    border: 3px red solid;
+    display: flex;
+    justify-content: center;
+
+}
+
+.input{
+    border: 3px red solid;
+    margin-bottom: 30px;
+}
+
+.logo1{
+    display: flex;
+    border: 3 rgb(255, 17, 17) solid;
+    width: 70px;
+    height: 60px;
+    
+}
