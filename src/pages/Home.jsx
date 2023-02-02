@@ -7,11 +7,11 @@ function  Home(){
         <div >
                 <Header></Header>
                 <div className="ini" >
-                <button >
+                <button className="bt1" >
             <Link to="/Login" >
             Iniciar Sesion</Link>
             </button>
-            <button>
+            <button className="bt1">
             <Link to="/AltaAutobus"> Alta de Autobuces</Link>
             </button>
             

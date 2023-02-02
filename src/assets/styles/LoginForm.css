@@ -24,13 +24,10 @@
 }
 
 .img{
+        border-radius: 10px;
         display: flex;
-        margin-top: 40%;
-        border: 5px red solid;
-        width: 30%;
-        margin-bottom: 90px;
-        margin: 0 auto;
-        align-items: center;
+        justify-content: center;
+        height: 94px;
 }
 
 .buton{

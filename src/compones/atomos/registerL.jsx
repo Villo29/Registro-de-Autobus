@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link, Navigate } from "react-router-dom";
-import Logo from '../../assets/devil68-svg.svg'
+import Logo from '../../assets/logo1.png'
 import "../../assets/styles/Register.css"
 
 

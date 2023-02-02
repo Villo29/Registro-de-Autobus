@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../assets/devil68-svg.svg'
+import Logo from '../../assets/logo1.png'
 import "../../assets/styles/LoginForm.css"
 import "../../assets/styles/FormAlta.css"
 
@@ -28,15 +28,15 @@ function FormLogin() {
                 <div id='Supe'>
                 <div className='form'>
                 <form action="" >
-                <img src={Logo}  width="54" height="60" />
+                <img src={Logo} className="img"  />
                 <div>
                 <input type="text" className='input' placeholder='Usuario' value={stateForm.username} onChange={handlerChange} />
                 <input type="text" className='input' placeholder='Contraseña' value ={stateForm.password} onChange={handlerChangePassword} />
                 </div>
-                <button onClick={handlerClick} className="buton" >Inicio de sesion</button>
+                <button onClick={handlerClick} className="bt1" >Inicio de sesion</button>
 
                 <Link to="/Register">
-                    <button className="buton" >Registrarse</button>
+                    <button className="bt1" >Registrarse</button>
                 </Link>
                 <div>
                     <label >{JSON.stringify(stateForm)}</label>

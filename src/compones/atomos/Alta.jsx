@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Logo from '../../assets/devil68-svg.svg'
+import Logo from '../../assets/logo1.png'
 
 
 function Alta() {
