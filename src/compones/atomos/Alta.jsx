@@ -6,12 +6,11 @@ import Logo from '../../assets/logo1.png'
 
 function Alta() {
     const [selectedOption, setSelectedOption] = useState("Turismo");
-    const [license, setLicense] = useState(Math.floor(Math.random() * 100000));
+    const [license, setLicense] = useState(Math.floor(Math.random() * 2002));
     function handleChange(event) {
     setSelectedOption(event.target.value);
     }
     const navigate = useNavigate();
-
     const formDataF = useRef();
     const handlerClick = (e) => {
     e.preventDefault();
@@ -42,41 +41,39 @@ function Alta() {
     return (
     <div className="formPadre">
     <div className="formBus">
-        <div className="imgAlta">
+        <div className="img">
         <img src={Logo} alt="Logo" height="100px" />
         </div>
         <form ref={formDataF}>
-        <div className="fmAlta">
-            <div className="Column">
+            <div className="inputarri">
             <label className="cap" htmlFor="clave"> Clave autobus
             </label>
-            <input type="text" id="clave" name="clave" className="inp" />{" "}
+            <input type="text" id="clave" name="clave" className="input" />{" "}
             <label className="cap" htmlFor="placa">Placa
             </label>
-            <input type="text" id="placa" name="placa" className="inp" />{" "}
+            <input type="text" id="placa" name="placa" className="input" />{" "}
             </div>
-            <div className="Column">
+            <div className="inputarri">
             <label className="cap" htmlFor="asientos">Numero de Asientos
             </label>
             <input
-                type="number" id="asientos" name="asientos" className="inp"/>
+                type="number" id="asientos" name="asientos" className="input"/>
             <label className="cap">Fecha de Alta
-                <input type="Date" id="fecha" name="fecha" className="inp" />
+                <input type="Date" id="fecha" name="fecha" className="input" />
             </label>
             </div>
-        </div>
-        <div className="Column2">
+            <div className="inputaba">
             <label className="cap" htmlFor="tipo"> Tipo
-            <select value={selectedOption} onChange={handleChange} id="tipo" name="tipo" className="inp">
-                <option value="Turismo">Turismo</option>
-                <option value="Lujo">Lujo</option>
+            <select value={selectedOption} onChange={handleChange} id="tipo" name="tipo" className="input">
+            <option value="Turismo">Turismo</option>
+            <option value="Lujo">Lujo</option>
             </select>
             </label>
             <label className="cap"> Nombre del chofer
-            <input type="text" id="chofer" name="chofer" className="inp" />
+            <input type="text" id="chofer" name="chofer" className="input" />
             </label>
             <label className="cap" id="licencia"> Número de licencia:
-            <input name="licencia" value={license} disabled className="inp"></input>
+            <input name="licencia" value={license} disabled className="input"></input>
             </label>
         </div>
         <div className="boton">
