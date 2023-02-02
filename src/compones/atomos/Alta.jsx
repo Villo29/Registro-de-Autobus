@@ -1,7 +1,9 @@
 import { useRef } from "react";
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 import { useNavigate } from "react-router-dom";
 import Logo from '../../assets/logo1.png'
+
 
 
 function Alta() {
@@ -77,7 +79,9 @@ function Alta() {
             </label>
         </div>
         <div className="boton">
-            <button onClick={handlerClick}>Registro</button>
+                <Link to="/">
+                <button onClick={handlerClick}>Registro</button>
+                </Link>
         </div>
         </form>
     </div>

@@ -9,11 +9,9 @@ import "../../assets/styles/FormAlta.css"
 
 
 function FormLogin() {
-    //let description = " Componente prencentacional"
     const [stateForm, setStateForm] = useState({username:'', password:''})
-    const handlerClick = (e) => {
-        e.preventDefault()
-        setDescription({msn: username})    
+     const handlerClick = (e) => {
+       // setDescription({msn: username})    
     }
     const handlerChange = (e) => {
         console.log(stateForm.username)
@@ -23,6 +21,21 @@ function FormLogin() {
     const handlerChangePassword = (e) => {
         setStateForm({...stateForm,password: e.target.value})
     }
+    // const handlerClick = (e) => {
+    // e.preventDefault();
+    // const formData = new FormData(formDataL.current);
+    // let URI = "http://34.225.239.102/api/iniciar";
+    // let option = {
+    // method: "GET",
+    // headers: {
+    // "Content-Type": "application/json",
+    // },
+    // body: JSON.stringify({
+    // usuario: formData.get("username"),
+    // clave: formData.get("clave"),
+    // }),
+    // }
+
     return ( 
         <>
                 <div id='Supe'>
@@ -30,11 +43,12 @@ function FormLogin() {
                 <form action="" >
                 <img src={Logo} className="img"  />
                 <div>
-                <input type="text" className='input' placeholder='Usuario' value={stateForm.username} onChange={handlerChange} />
-                <input type="text" className='input' placeholder='Contraseña' value ={stateForm.password} onChange={handlerChangePassword} />
+                <input type="text" className='input' placeholder='Usuario' username="username" value={stateForm.username} onChange={handlerChange} />
+                <input type="password" className='input' placeholder='Contraseña' clave="clave" value ={stateForm.password} onChange={handlerChangePassword} />
                 </div>
+                <Link to="/AltaAutobus">
                 <button onClick={handlerClick} className="bt1" >Inicio de sesion</button>
-
+                </Link>
                 <Link to="/Register">
                     <button className="bt1" >Registrarse</button>
                 </Link>
@@ -45,7 +59,7 @@ function FormLogin() {
         </div>
         </div>
         </>
-     );
-}
+    );
+    }
 
 export default FormLogin;
