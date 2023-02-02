@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../../assets/devil68-svg.svg'
 import "../../assets/styles/LoginForm.css"
+import "../../assets/styles/FormAlta.css"
 
 
 

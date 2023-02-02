@@ -12,7 +12,7 @@ function  Home(){
             Iniciar Sesion</Link>
             </button>
             <button>
-            <Link to="/Alta-Autobus"> Alta de Autobuces</Link>
+            <Link to="/AltaAutobus"> Alta de Autobuces</Link>
             </button>
             
                 </div>

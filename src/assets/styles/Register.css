@@ -1,19 +1,18 @@
 .cuadro{
-    border: 3px red solid;
+    border: 3px rgb(0, 0, 0) solid;
     display: flex;
     justify-content: center;
-
+    background-color: rgba(78, 218, 218, 0.56);
+    margin-bottom: 20px;
 }
 
 .input{
-    border: 3px red solid;
+    border: 3px rgb(0, 0, 0) solid;
     margin-bottom: 30px;
 }
 
 .logo1{
     display: flex;
-    border: 3 rgb(255, 17, 17) solid;
     width: 70px;
     height: 60px;
-    
 }

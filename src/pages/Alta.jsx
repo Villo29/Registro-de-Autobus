@@ -1,9 +1,11 @@
-import AltaB from "../compones/atomos/Alta";
+import Alta from "../compones/atomos/Alta";
 
-function AltaAutobus() {
+function AltaProducto() {
     return ( 
-        <AltaB></AltaB>
+        <>
+        <Alta/>
+        </>
      );
 }
 
-export default AltaAutobus;
+export default AltaProducto;
